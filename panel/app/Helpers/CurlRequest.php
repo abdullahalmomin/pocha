@@ -1,17 +1,18 @@
 <?php
 namespace App\Helpers;
 use Illuminate\Support\Carbon;
+use Illuminate\Http\Request;
 use Auth;
 
 class CurlRequest{
-    public static function curlRequest($url,$param=Null){
+    public static function getData($url,$orgId,$param=Null){
         //Curl Url
         // $url = 'http://bdmobile.net/bkash/api/bKash';
         $url = $url;
         /* Update URL to container Query String of Paramaters */
-        if(!is_null($param))
+        $param['org_id'] = $orgId;
+        if(count($param)>0)
             $url .= '?' . http_build_query($param);
-
         /* cURL Resource */
         $ch = curl_init();
 
