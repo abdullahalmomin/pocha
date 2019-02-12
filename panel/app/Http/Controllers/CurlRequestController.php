@@ -9,7 +9,7 @@ class CurlRequestController extends Controller
 {
     public function __construct(){
     	// $this->url = 'http://bdmobile.net/bkash/api/bKash';
-    	$this->url = 'http://localhost/etraceability_beta2/curlRequest';
+    	$this->url = 'http://globe.farmersmarket.asia/curlRequest';
     }
     
     public function AppModule(Request $request){

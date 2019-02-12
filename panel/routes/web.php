@@ -14,4 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('dashboard/{filterModule}','DashboardController@dashboard');
+
 Route::get('curlRequest/{filterModule}','CurlRequestController@AppModule');
