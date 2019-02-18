@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Helpers\CurlRequest;
+use Illuminate\Support\Facades\Session;
+use Carbon\Carbon;
+use DB;
 
 class DashboardController extends Controller{
 	public function __construct(){
@@ -11,12 +14,12 @@ class DashboardController extends Controller{
     }
     public function dashboard(Request $request){
     	$curlData = json_decode(CurlRequest::getData($this->url,1,$request->all()));
-    	if(isset($curlData->allHarvestRecord)):
+    	/*if(isset($curlData->allHarvestRecord)):
 		    foreach($curlData->allHarvestRecord as $value):
-		    	echo $value->created_at;
+		    	echo Carbon::parse($value->created_at)->toDateString().'<br>';
 		    endforeach;
 		endif;
-    	dd($curlData);
+    	dd($curlData);*/
     	return view('WhiteFish.buyer.dashboard')->with('curlData',$curlData);
     }
 }

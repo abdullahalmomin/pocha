@@ -29,34 +29,12 @@
                     </div>
                 </div>
                 <div class="col-md-2"></div>
-            </div>
-        </div>
-<!--         <div class="col-md-4">
-            <div style="_height: 290px" class="panel panel-default card-view">
-                <div class="panel-wrapper collapse in">
-                    <div class="panel-body sm-data-box-1">
-                        <span class="uppercase-font weight-500 font-14 block text-center txt-dark">Last 30 Days Buy</span>
-                        <div class="cus-sat-stat weight-500 txt-primary text-center mt-5">
-                            <span class="counter-anim">8888</span>
-                        </div>
-                        <div class="progress-anim mt-20">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary
-                                wow animated progress-animated" role="progressbar" aria-valuenow="93.12" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <ul class="flex-stat mt-5">
-               
-                            <p class="block pull-left" style="width:100%">
-                                <span class="pull-left">lorem</span>
-                                <span class="pull-right weight-500 txt-dark font-15">9999 (&#2547)</span>
-                            </p>
-                        
-                        </ul>
-                    </div>
+
+                <div class="col-md-12">
+                    <img src="{{ asset('assets/img/structure.png') }}" class="img-responsive">
                 </div>
             </div>
-        </div>   -->
+        </div>
         <div class="col-md-1"></div>
         <div class="col-md-4 pull-right">
             <div class="card">
