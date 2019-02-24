@@ -17,6 +17,7 @@ Route::get('/', function () {
 Route::get('dashboard/{filterModule}','DashboardController@dashboard');
 
 Route::get('curlRequest/{filterModule}','CurlRequestController@AppModule');
+Route::get('/dashboard1', 'HomeController@dashboard')->name('dashboard1');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
